@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tiny Cat Cafe</title>
+
+  <!--bootstrapin CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- linkki omaan tyylitiedostoon -->
+  <link href="kahvilatyyli.css" rel="stylesheet">
+  <!-- linkit googlen fonttien tyylitiedostoihin -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+
+  <!-- linkki bootstrapin javascript-kirjastoon -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <main id="alku" class="container-fluid">
+    <!-- navipalkki -->
+    <nav class="navbar navbar-expand-sm navbar-custom fixed-top">
+      <div class="container">
+        <img src="logo1.jpg" alt="Logo" style="width: 40px;" class="rounded-pill">
+        <a class="navbar-brand" href="#alku">Tiny Cat Cafe</a>
+        <!-- hampurilaiskuvio -->
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#section1">Etusivu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#section2" role="button" data-bs-toggle="dropdown">Menu</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Juomat</a></li>
+                <li><a class="dropdown-item" href="#">Suolaiset herkut</a></li>
+                <li><a class="dropdown-item" href="#">Makeat herkut</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Kissamme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section4">Kahvila</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section5">Ota Yhteyttä</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- karuselli alkaa -->
+    <div id="section1" class="container-fluid bg-custom text-white" style="padding: 80px;">
+      <!-- karuselli-->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="kissatkassallajpg.jpg" alt="Kissat kassalla" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Tervetuloa kissakahvilaamme!</h2>
+              <br>
+              <p>Kahvilamme sijaitsee Helsingin sydämessä ja tarjoaa kaikille aisteillesi unohtumattoman elämyksen kissojemme seurassa. </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="kissaherkut.jpg" alt="erilaisia kahveja" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Erikoistumme kissateemaiseen kahvitaiteeseen</h2>
+              <br>
+              <p>Voit pyytää kahvitaiteilijaltamme erikoistoiveita kissakuvioiseen kahviisi!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="herkut.jpg" alt="Herkkuja" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Meiltä löydät herkut jokaiseen nälkään!</h2>
+              <br>
+              <p>Maukkaat leivoksemme ovat käsintehtyjä ja vastuullisesti hankittujen raaka-aineiden tuotoksia. </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="kissa3.jpg" alt="kissa lattialla" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Kissamme odottavat sinua!</h2>
+              <br>
+              <p>Tule tervehtimään kissojamme ja nauttimaan heidän hurmaavista persoonallisuuksistaan.</p>
+            </div>
+          </div>
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- haitarimalli -->
+    <div id="section2" class="container-fluid bg-custom text-white" style="padding:100px 20px;">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Juomat
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="kahvi1.jpg" alt="kahvia kermavaahdolla">
+                    </div>
+                    <div class="col-md-4">
+                      <h2>Juomaksi</h2>
+                      <br>
+                      <p>Meillä on laaja valikoima lämpimiä ja kylmiä juomia. Erikoistumme erityisesti kissateemaiseen kahvitaiteeseen.
+                       </p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="kissakuppi.jpg" alt="kissakuppi">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Suolaiset herkut
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="kissaleivat.jpg" alt="kissanmuotoisia leipiä">
+                    </div>
+                    <div class="col-md-4">
+                      <h2>Suolaiset herkut</h2>
+                      <br>
+                      <p>Suolaisennälkäisille tarjoamme lämpimiä ja uunituoreita kissanmuotoisia sämpylöitä.</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="kissaleipa.jpg" alt="kissanmuotoinen leipä">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Makeat herkut
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img src="kissakakku.jpg" alt="kissanmuotoisia kuppikakkuja">
+                    </div>
+                    <div class="col-md-4">
+                      <h2>Makeannälkään</h2>
+                      <br>
+                      <p>Meiltä saat maukkaita ja suloisen syötäviä kissaleivonnaisia.</p>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="kissakuppikakku.jpg" alt="kissanmuotoisia leivonnaisia">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </div>
+    <!--kortit -->
+    <div id="section3" class="container-fluid bg-custom text-white" style="padding:80px 20px;">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="card-group">
+            <div class="card">
+              <img src="kissa-korissa.jpg" class="card-img-top" alt="Luna">
+              <div class="card-body">
+                <h5 class="card-title">Luna</h5>
+                <p class="card-text">Luna on valkoharmaa brittiläinen lyhytkarva kissa. Hän on melko arka, joten lähestythän häntä varovasti.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="kissa4.jpg" class="card-img-top" alt="Viiru">
+              <div class="card-body">
+                <h5 class="card-title">Viiru</h5>
+                <p class="card-text">Viiru on ruskea tabbykissa. Hän on varsinainen halinalle saattaa hypätä varoittamatta syliisi ja vaatia halauksia.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="kissa2.jpg" class="card-img-top" alt="Hermanni">
+              <div class="card-body">
+                <h5 class="card-title">Hermanni</h5>
+                <p class="card-text">Hermannin turkki on valkoinen kissa ruskeilla läikillä. Hän on aikamoinen ruokavaras, joten olethan varovainen, ettei hän pääse lautasellesi. </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="kissa1.jpg" class="card-img-top" alt="Miina">
+              <div class="card-body">
+                <h5 class="card-title">Miina</h5>
+                <p class="card-text">Miina on lyhytkarvainen kinuskin värinen kissa.Tämä puhelias ja seurallinen neiti pitää erittäin paljon rapsutuksista. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+      </div>
+    </div>
+    <!-- aukioloajat -->
+    <div id="section4" class="container-fluid bg-custom text-white" style="padding:80px 20px;">
+      <div class="container" id="kahvila">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <img src="kissakahvila1 (1).jpg" alt="kissakahvila1">
+          </div>
+          <div class="col-md-3">
+            <h2>Aukioloajat:</h2>
+            <p><br>ma: suljettu <br> ti-pe: 12:00-20:00 <br> la: 10:00-20:00</p>
+          </div>
+          <div class="col-md-4">
+            <img src="kissakahvila2.jpg" alt="kissakahvila2">
+          </div>
+        </div>
+      </div>
+      <br><br><br><br><br><br>
+      <!--tabit ja videot -->
+      <!-- Nav pills -->
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="pill" href="#video1">Video 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#video2">Video 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#video3">Video 3</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <br>
+          <div class="tab-content">
+            <div class="tab-pane container active" id="video1">
+              <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zadxEvylsw8?si=zufg94MDu1zPKvRu"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="video2">
+              <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/iTpGWyQFxdE?si=nWO0HzIL8mXdlppD"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <div class="tab-pane container fade" id="video3">
+              <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/X9YDT4QM29g?si=OooOzsjWeIhPWrDd"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <br><br><br><br><br><br>
+    </div>
+    <!-- taulukko -->
+    <div id="section5" class="container-fluid bg-custom text-white">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+          <div class="table-responsive">
+            <div class="container">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Nimi</th>
+                    <th>Tehtävä</th>
+                    <th>Puhelinnumero</th>
+                    <th>Sähköpostiosoite</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Pekka Töpöhäntä</td>
+                    <td>Kahvilanpitäjä</td>
+                    <td>040 1234567</td>
+                    <td>pekka.topohanta@tinycatcafe.com</td>
+                  </tr>
+                  <tr>
+                    <td>Maija Maitoparta</td>
+                    <td>Kahvilatarjoilija</td>
+                    <td>040 1234568</td>
+                    <td>maija.maitoparta@tinycatcafe.com</td>
+                  </tr>
+                  <tr>
+                    <td>Katti Matikainen</td>
+                    <td>Kahvilatyöntekijä</td>
+                    <td>040 1234569</td>
+                    <td>katti.matikainen@tinycatcafe.com</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1">
+      </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <!-- varaa pöytä -lomake -->
+        <div class="col-md-5">
+          <form onsubmit="return false" class="varaapoyta">
+            <label for="nimi" class="muoto">Nimi</label>
+            <input type="text" id="nimi" placeholder="Nimi" required>
+            <br><br>
+            <label for="sposti" class="muoto">Sähköposti</label>
+            <input type="email" id="sposti" placeholder="Sähköposti" required>
+            <br><br>
+            <label for="puh" class="muoto">Puhelin</label>
+            <input type="tel" id="puh" placeholder="Puhelinnumero">
+            <br><br>
+            <label for="maara" class="muoto">Henkilömäärä</label>
+            <input type="number" id="hlomaara" placeholder="0">
+            <br><br>
+            <label for="pvm" class="muoto">Päivämäärä</label>
+            <input type="date" id="pvm" placeholder="pv.kk.vvvv" required>
+            <br><br>
+            <label for="aika" class="muoto">Kellonaika</label>
+            <input type="time" id="aika" placeholder="12:30" required>
+            <br><br>
+            <input type="submit" value="Lähetä" onclick="tulos()">
+            <input type="reset" value="Tyhjennä">
+            <br><br>
+            <div id="tulos"></div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <!-- palautelomake -->
+          <form onsubmit="return false" class="lomake">
+            <label for="nimi" class="muoto">Nimi</label>
+            <input type="text" id="nimi_palaute" placeholder="Kerro nimesi" required>
+            <br><br>
+            <label for="sposti" class="muoto">Sähköposti</label>
+            <input type="email" id="sposti_palaute" placeholder="Sähköpostiosoite" required>
+            <br><br>
+            <label for="puh" class="muoto">Puhelin</label>
+            <input type="tel" id="puh_palaute" placeholder="Puhelinnumero">
+            <br><br>
+            <label for="palaute" class="muoto">Palaute</label>
+            <br>
+            <textarea id="palaute" rows="5" cols="30"></textarea>
+            <br><br>
+            <!-- radiobuttonit, vain yksi valinta mahdollinen -->
+            <label>Kuka kissoistamme valloitti sydämesi?</label>
+            <br>
+            <input type="radio" id="luna" name="parasta" value="Luna">
+            <label for="luna">Luna</label>
+            <br>
+            <input type="radio" id="viiru" name="parasta" value="Viiru">
+            <label for="viiru">Viiru</label>
+            <br>
+            <input type="radio" id="hermanni" name="parasta" value="Hermanni">
+            <label for="hermanni">Hermanni</label>
+            <br>
+            <input type="radio" id="miina" name="parasta" value="Miina">
+            <label for="miina">Miina</label>
+            <br><br>
+            <!-- checkbox, useampi valinta mahdollinen -->
+            <label>Mitä haluaisit lisää kahvilaamme?</label>
+            <br>
+            <input type="checkbox" id="esiintyja" name="lisaa" value="esiintyjia">
+            <label for="esiintyja">Esiintyjiä</label>
+            <br>
+            <input type="checkbox" id="Kissoja" name="lisaa" value="kissoja">
+            <label for="Kissoja">Kissoja</label>
+            <br><br>
+            <!-- alasvetovalikko -->
+            <label>Vierailisitko uudelleen kahvilassamme?</label>
+            <select name="loytyiko" id="loytyiko">
+              <option value="kylla">Kyllä</option>
+              <option value="ei">Ei</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Lähetä" onclick="vastausviesti()">
+            <input type="reset" value="Tyhjennä">
+            <br><br>
+            <!-- elementti, johon vastausviesti tulostuu -->
+            <div id="vastausviesti"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!-- linkki js-tiedostoon -->
+  <script src="varaapoyta.js"></script>
+  <script src="oma.js"></script>
+</body>
+
+</html>
